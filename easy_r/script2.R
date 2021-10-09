@@ -1,4 +1,4 @@
-install.packages("ggplot2")
+#install.packages("ggplot2")
 library(ggplot2)
 rm(list=ls())
 
@@ -28,14 +28,3 @@ df_midterm <- data.frame(english = c(90,80,60,70),
 df_fruit <- data.frame(fruit = c("사과", "딸기", "수박"),
                        price = c(1800, 1500, 3000),
                        volumn = c(24, 38, 13))
-
-
-#외부 데이터 이용하기
-library(readxl)
-getwd()
-install.packages('Rcpp')
-df_exam <- read_excel("excel_exam.xlsx")
-
-#문제 발생
-remove.packages("ggplot2")
-
